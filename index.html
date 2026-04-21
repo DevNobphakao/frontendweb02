@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keithston Coffee Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Prompt:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="hero-section text-white">
+        <nav class="flex justify-between items-center px-10 py-6">
+            <div class="flex items-center gap-3">
+                <img src="./images/logo.png" alt="Keithston Logo" class="w-28 h-28 object-contain">
+            </div>
+            <ul class="hidden md:flex gap-8 text-sm uppercase tracking-widest">
+                <li><a href="#" class="hover:text-orange-400">Home</a></li>
+                <li><a href="#" class="hover:text-orange-400">Blog</a></li>
+                <li><a href="#" class="hover:text-orange-400">Contact Us</a></li>
+                <li><a href="#" class="hover:text-orange-400">Services</a></li>
+            </ul>
+        </nav>
+
+        <div class="flex-grow flex flex-col justify-center px-10 md:px-20">
+            <p class="text-lg mb-2">Delicious Cafe</p>
+            <h1 class="text-5xl md:text-7xl font-bold product-title mb-8 leading-tight">Sweet Treats,<br>Perfect Eats
+            </h1>
+            <div class="flex gap-6 items-center">
+                <a href="#products"
+                    class="bg-[#8b4513] hover:bg-[#a0522d] px-8 py-3 rounded text-white font-semibold transition shadow-lg">Shop
+                    Now</a>
+                <a href="#products" class="text-white hover:text-orange-400 underline underline-offset-8">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="products" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="product-title text-5xl text-center mb-20 text-black italic font-bold">Top Products</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+
+                <script>
+                    // ใช้ Loop สร้างการ์ด 6 ใบเพื่อไม่ให้โค้ดยาวเกินไป
+                    for (let i = 1; i <= 6; i++) {
+                        document.write(`
+                        <div class="bg-stone-texture rounded-xl p-8 flex flex-col justify-between min-h-[420px] shadow-2xl transition-transform hover:-translate-y-2">
+                            <div class="flex justify-center mt-4">
+                                <img src="./images/product${i}.png" class="w-48 h-48 object-contain drop-shadow-[0_20px_20px_rgba(255,255,255,0.1)]">
+                            </div>
+                            <div class="mt-8">
+                                <div class="flex justify-between items-center mb-5">
+                                    <span class="text-white text-2xl font-bold tracking-tight">40 Baht</span>
+                                    <button class="text-white/50 border border-white/20 rounded-full w-7 h-7 flex items-center justify-center text-[10px] italic">i</button>
+                                </div>
+                                <div class="flex justify-between items-end">
+                                    <h3 class="text-white/90 text-xl font-light leading-snug max-w-[150px]">Whole Grain Bread</h3>
+                                    <button class="bg-[#8b4513] hover:bg-[#a0522d] text-white px-7 py-2 rounded shadow-md transition-all active:scale-95 text-sm">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        `);
+                    }
+                </script>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
+<section class="promo-banner">
+    <div class="banner-content">
+        <h2 class="banner-title">20% Off Your First Order</h2>
+        <p class="banner-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nesciunt rem.
+        </p>
+        <a href="#" class="banner-btn">Learn More</a>
+    </div>
+</section>
+
+<section class="explore-section">
+    <div class="container">
+        <h2 class="explore-title">Explore More</h2>
+
+        <div class="tab-menu">
+            <a href="#" class="tab-item active">Cake</a>
+            <a href="#" class="tab-item">Muffins</a>
+            <a href="#" class="tab-item">Croissant</a>
+            <a href="#" class="tab-item">Bread</a>
+            <a href="#" class="tab-item">Tart</a>
+            <a href="#" class="tab-item">Favorite</a>
+        </div>
+        <hr class="tab-line">
+
+        <div class="photo-grid">
+            <div class="photo-item"><img src="./images/product11.png" alt="Dessert 1"></div>
+            <div class="photo-item"><img src="./images/product12.png" alt="Dessert 2"></div>
+            <div class="photo-item"><img src="./images/product13.png" alt="Dessert 3.1"></div>
+            <div class="photo-item"><img src="./images/product14.png" alt="Dessert 4"></div>
+            <div class="photo-item"><img src="./images/product15.png" alt="Dessert 5"></div>
+            <div class="photo-item"><img src="./images/product16.png" alt="Dessert 6"></div>
+        </div>
+    </div>
+</section>
+
+<section class="about-banner">
+    <div class="banner-overlay">
+        <div class="about-content">
+            <h2 class="about-title">About us</h2>
+            <p class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt rem odit labore unde nemo omnis sequi.
+            </p>
+            <a href="#" class="about-btn">Read More</a>
+        </div>
+    </div>
+</section>
+
+<section class="featured-treats">
+    <div class="container">
+        <h2 class="section-title">Featured Treats</h2>
+
+        <div class="treats-grid">
+            <div class="treat-item">
+                <div class="treat-image-wrapper">
+                    <img src="./images/product7.png" alt="Puff Pastry">
+                </div>
+                <div class="treat-details">
+                    <span class="treat-name">Puff Pastry</span>
+                    <span class="treat-price">8 Baht</span>
+                </div>
+            </div>
+
+            <div class="treat-item">
+                <div class="treat-image-wrapper">
+                    <img src="./images/product8.png" alt="Doughnuts">
+                </div>
+                <div class="treat-details">
+                    <span class="treat-name">Doughnuts</span>
+                    <span class="treat-price">8 Baht</span>
+                </div>
+            </div>
+
+            <div class="treat-item">
+                <div class="treat-image-wrapper">
+                    <img src="./images/product9.png" alt="Brownies">
+                </div>
+                <div class="treat-details">
+                    <span class="treat-name">Brownies</span>
+                    <span class="treat-price">8 Baht</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="./images/logo2.png" alt="KEITHSTON">
+            </div>
+            <div class="footer-social">
+                <span>Follow us</span>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>About Us</h3>
+                <p>(02) 807-4500</p>
+                <p>info@sau.ac.th</p>
+                <p>19/1 Phetkasem Road<br>Nongkham Bangkok 10160</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Recent News</h3>
+                <div class="news-item">
+                    <img src="./images/product9.png" alt="news">
+                    <div class="news-text">
+                        <span>June 14, 2025</span>
+                        <p>Puff pastry bliss.</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="./images/product10.png" alt="news">
+                    <div class="news-text">
+                        <span>June 14, 2025</span>
+                        <p>Puff pastry bliss.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bake House. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
